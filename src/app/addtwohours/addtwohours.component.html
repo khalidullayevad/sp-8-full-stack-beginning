@@ -1,0 +1,15 @@
+
+<div class="container">
+  <div *ngIf="done">Result  = {{result}}</div>
+  <div class="form-group" style="max-width: 100px">
+    <label>Enter time    </label>
+    <input class="form-control" type="time" name="num1" [(ngModel)]="hour" />
+  </div>
+  <div class="form-group" style="max-width: 300px">
+    <label>Enter date   </label>
+    <input class="form-control" type="date" name="num2" [(ngModel)]="date" />
+  </div>
+  <div class="form-group mt-4">
+    <button class="btn btn-danger" (click)="submit()">Отправить</button>
+  </div>
+</div>
